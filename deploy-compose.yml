@@ -30,6 +30,11 @@ services:
       - ./uploads:/app/uploads
       - ./logs:/app/api/logs
 
+  mongodb:
+    image: tianon/true
+    command: ""
+    entrypoint: ""
+
   meilisearch:
     container_name: chat-meilisearch
     image: getmeili/meilisearch:v1.12.3
