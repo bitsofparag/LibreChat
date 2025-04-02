@@ -31,7 +31,7 @@ services:
       - ./logs:/app/api/logs
 
   mongodb:
-    image: tianon/true
+    image: rjocoleman/noop
     command: ""
     entrypoint: ""
 
