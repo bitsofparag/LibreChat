@@ -9,6 +9,7 @@ services:
     ports:
       - 3080:3080
     depends_on:
+      - mongodb
       - rag_api
     restart: always
     extra_hosts:
@@ -31,7 +32,7 @@ services:
       - ./logs:/app/api/logs
 
   mongodb:
-    image: rjocoleman/noop
+    image: tianon/true:multiarch
     command: ""
     entrypoint: ""
 
