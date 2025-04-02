@@ -33,6 +33,7 @@ services:
 
   mongodb:
     image: tianon/true:multiarch
+    restart: on-failure:20
     command: ""
     entrypoint: ""
 
